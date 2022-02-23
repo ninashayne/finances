@@ -1,0 +1,7 @@
+pg_dump -U postgres -W -F t nschuchman > fink_finances_backup.tar
+
+
+createdb -U postgres restored-db2 --template=template0
+
+
+pg_restore -U postgres -d restored-db2 < ./fink_finances_backup.tar

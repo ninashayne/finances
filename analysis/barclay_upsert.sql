@@ -1,0 +1,1 @@
+{{upsert_table('barclay')}}
