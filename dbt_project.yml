@@ -1,0 +1,46 @@
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'my_new_project'
+version: '1.0.0'
+config-version: 2
+
+profile: 'nina_personal'
+
+
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"  # directory which will store compiled SQL files
+clean-targets:         # directories to be removed by `dbt clean`
+    - "target"
+    - "dbt_modules"
+    - "logs"
+
+
+seeds:
+  my_new_project:
+    amex_transactions:
+      +column_types:
+        date: date
+    barclay_transactions:
+      +column_types:
+        transaction_date: date
+    chase_amazon_transactions:
+      +column_types:
+        transaction_date: date
+
+    chase_freedom_transactions:
+      +column_types:
+        transaction_date: date
+    chase_sapphire_transactions:
+      +column_types:
+        transaction_date: date
+    apple_transactions:
+      +column_types:
+        transaction_date: date

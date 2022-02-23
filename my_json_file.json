@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ninafinances",
+  "private_key_id": "6f234ce83311222f32bd740649c0317bb53269ed",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDeTGDUK4OrM4pD\nWEYb/4hBMXVZjNltVyUB86WoEmf7Zd9DqN4VxoHWPfvx6Ke6RsHLQxLzAsLlItaA\nLjRaLeWOiPofcRnjO8FaPjfWflNUrxCi8q9yD4LqmGnDZsxs1FQld+JYZen21zVG\nnlUnVX/auvvlfm8Pstxe7UWqVt0ZGIg6gAA6wltYieBY4Wx8jWATN2/3dSOsWw6J\nPp3HIGHLL8KUBW6T25L2489byX8eDdxMwv0XFmwt1eWIOH+Ryx05Rg36MIDhw9Al\nh3MEDblXIc/UzQ73tOoQz8bqMKsXGr9YRbNiLC4LvX7J5KfkiCOyMdktWRzs5pnV\n2sunY2J1AgMBAAECggEAB01MbJR1sx5Pvc9LZv0gttT0tGUO7dn6l2dGib7LNzyh\nakYWHLhFos+U9wvQSBPzpsU7znngBEm38JU23TPTSubvIdNyV7MHg/r7lL6oz4gH\n4PVGWbL6MS7nvtTbyuXoxmmSboN2IFQf6+B2GiYdjQYi+kPyvxFD5gjlNUp2m63R\neGutB1PfFTnsartMPGPbG+/qDe7NqNmpSCZp+B2lFJJQVjkRneAIOuLPBNcVEBeB\n4/ZmOZ9J5ukwsywLDHY4p2x4RMcQr5AaI2iyZOBcQlMfDtWJTQrWGlZcBtoCmHUd\noC9Mm7xolnLjmpG+ryviMdMTSO9aYBgcuhzqG6uiAQKBgQD57bT6jqAfcnDGDG9/\nZGy+HBsRHSNdd/mCIFR1mOG65SZag1QF41YZMsSyqZsa9mXrkDUpQM88Iw60tw1F\nPHmh4pvuCeXI9kMrduNJASdxFGiVNyJvUnMpoH0qnmcKALG7dUnfCDUVbSVz6TED\nQRjX9iPgpj+dHO5AKw2w25Po5wKBgQDjstcslICbVfp2zfMAEmiQAC2lroqwBM7J\nbUZyCr6jscjSo6OtOda9I1Pm21CsS96JfdEdAIUJ8VRL4zMM3ilvgq6onKb0iYGQ\nt/2XyrOjnfQ4p1NXumLvN9XVBFLiWdFJT3UedJGQ14VgdKZC+QKt6Ot143/Z/z3q\n33MAsbNiQwKBgQCSmLyEDy6a43yEnny0A4rJRCEYO7gnthyzGBWSWNdm0cxaYRfi\n0EMLSr0XcuaYvRhxQMf955bm1kVk+M4e42cQ7qO5zzJqWxBxKS4N/1BMQsVJaOqY\n04rbStjAK+OSeW/G3fgzi1PfuoKyZ4CpQQC6hBTtS3aayIJzPw2rxFAQ1wKBgQCb\nO+oGspebT1qadH4epm4y/mwgcIaMyjpQiPdl+H1QDHzlXjrQdoY4HEWvNgYh8Pee\ntPBD3X7V8HmP4y2CsFN/epCo02Pfg3+ZslZpjgA6pA1EMo9XV/LrNB3MRE5dku5k\nFI+8W6yCGu0LfXt8XVe+SPV+QcOAU8tavUwiRQQPEQKBgEja2Zg8yAbDdA+9q2Fe\nUWCdK3d/rxlZPwiaTQfy83Dq5Di7v99oFzuB7/IeOyJCNMBhYebD/1pErEq8e+Z6\nXTZhISborKUQlwS92C5MtoN4nA6a3gfRZdVS5U+bdapIrDoW7yemA4rd+Zt6+ZEB\nKz9nNiES0ExlfhAlMbcLsR2I\n-----END PRIVATE KEY-----\n",
+  "client_email": "finances-to-gsheets@ninafinances.iam.gserviceaccount.com",
+  "client_id": "109002167181063003420",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/finances-to-gsheets%40ninafinances.iam.gserviceaccount.com",
+  "google_sheet_id":"1gRhx7p2LjrOVbfvBzqssrjEoXFpsMk4hu77o7KzSwBs"
+}

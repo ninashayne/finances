@@ -1,0 +1,1 @@
+details, posting_date, description, amount, type, balance, check_number, blank_column

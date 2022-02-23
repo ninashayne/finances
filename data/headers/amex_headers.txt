@@ -1,0 +1,1 @@
+date, description, card_member, account_number, amount

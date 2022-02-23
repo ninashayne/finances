@@ -1,0 +1,1 @@
+transaction_date, clearing_date, description, merchant, category, type, amount, purchaser

@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: fink_finances
+    tables:
+      - name: amex_transactions
+      - name: apple_transactions
+      - name: barclay_transactions
+      - name: chase_amazon_transactions
+      - name: chase_checking_transactions
+      - name: chase_freedom_transactions
+      - name: chase_sapphire_transactions
+      - name: citi_transactions
+      - name: discover_transactions
+      - name: jetblue_transactions
+
+  - name: raw_transactions
+    tables:
+      - name: amex_transactions_cumulative
+      - name: apple_transactions_cumulative
+      - name: barclay_transactions_cumulative
+      - name: chase_transactions_cumulative
+      - name: citi_transactions_cumulative
+      - name: discover_transactions_cumulative

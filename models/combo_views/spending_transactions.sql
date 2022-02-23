@@ -1,0 +1,7 @@
+select date_trunc('month', transaction_date::date)::date as transaction_month
+, *
+, max(update_dt) over (partition by source_name) as source_latest_update_dt
+from {{ ref('stg_transactions') }}
+{# where not coalesce(is_reimbursed_by_house, False)
+and not coalesce(is_cancelled, false)
+and (category_l1 not in ('payment','income','transfer') or category_l1 is null) #}
