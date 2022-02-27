@@ -2,3 +2,4 @@
 *.csv
 dbt_modules/
 Logs/
+my_json_file.json
