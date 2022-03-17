@@ -1,1 +1,1 @@
-{{upsert_table('discover')}}
+{{run_upsert('discover')}}

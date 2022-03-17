@@ -1,1 +1,1 @@
-{{upsert_table('citi')}}
+{{run_upsert('citi')}}

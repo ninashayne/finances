@@ -1,1 +1,1 @@
-{{upsert_table('amex')}}
+{{run_upsert('amex')}}

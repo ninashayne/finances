@@ -1,1 +1,1 @@
-{{upsert_table('chase')}}
+{{run_upsert('chase')}}

@@ -1,1 +1,1 @@
-{{upsert_table('barclay')}}
+{{run_upsert('barclay')}}

@@ -1,1 +1,1 @@
-{{upsert_table('apple')}}
+{{run_upsert('apple')}}
