@@ -21,9 +21,15 @@ dbt compile
 echo "Upload output? y/n\n\n"
 read upload_output
 
-if [[ "$upload_output" = "y" ]]
-then
-  python3 import_to_googlesheets.py
-fi
+python3 import_to_googlesheets.py
+
+# if [[ "$upload_output" = "y" ]]
+# then
+#   python3 import_to_googlesheets.py
+# fi
 
 rm data/*.bak
+
+DATE=$(date +"%m-%d-%y")
+
+pg_dump -U postgres -W -F t nschuchman > "$DATE"_fink_finances_backup.tar
