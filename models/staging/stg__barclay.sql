@@ -20,6 +20,6 @@ from {{ source('fink_finances', 'barclay_transactions') }}
 
 select
   *
-  , {{ dbt_utils.surrogate_key(['transaction_date','transaction_description','amount','source_name']) }} as pkey
+  , source_name || {{ dbt_utils.surrogate_key(['transaction_date','transaction_description','amount','source_name']) }} as pkey
   , {{categories()}}
 from transactions

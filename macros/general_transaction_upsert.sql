@@ -16,7 +16,7 @@ select
 amount
 , transaction_date
 , transaction_description
-, source_name || pkey as pkey
+, pkey
 , category_l1
 , category_l2
 , is_cancelled
@@ -30,15 +30,18 @@ insert into raw_transactions.{{source_name}}_transactions_cumulative
 select amount
 , transaction_date
 , transaction_description
-, source_name || pkey as pkey
+, pkey
 , category_l1
 , category_l2
 , is_cancelled
 , is_reimbursed_by_house
 , source_name
 , current_timestamp
-from fink_finances.stg__{{source_name}}
-where source_name || pkey not in (select pkey from raw_transactions.{{source_name}}_transactions_cumulative);
+from fink_finances.stg__{{source_name}} new
+left join (select pkey as old_pkey from raw_transactions.{{source_name}}_transactions_cumulative) existing
+on new.pkey = existing.old_pkey
+where existing.old_pkey is null;
+
 
 commit;
 
