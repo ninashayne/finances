@@ -13,6 +13,7 @@ sources:
       - name: citi_transactions
       - name: discover_transactions
       - name: jetblue_transactions
+      - name: nordstrom_transactions
 
   - name: raw_transactions
     tables:
@@ -22,3 +23,4 @@ sources:
       - name: chase_transactions_cumulative
       - name: citi_transactions_cumulative
       - name: discover_transactions_cumulative
+      - name: nordstrom_transactions_cumulative

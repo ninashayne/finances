@@ -5,6 +5,7 @@
 , "amex_transactions_cumulative"
 , "discover_transactions_cumulative"
 , "apple_transactions_cumulative"
+, "nordstrom_transactions_cumulative"
 ]
 %}
 

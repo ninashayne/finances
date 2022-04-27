@@ -4,12 +4,14 @@ import pygsheets
 import pandas as pd
 import psycopg2
 #authorization
-gc = pygsheets.authorize(service_file='/Users/nschuchman/Desktop/repos/fink_finances/my_json_file.json')
+gc = pygsheets.authorize(service_file='/Users/ninafink/Desktop/nina_personal/finances/my_json_file.json')
 
 # # connect to database
-conn = psycopg2.connect("dbname='nschuchman' user='postgres' host='localhost' password='test'")
+conn = psycopg2.connect("dbname='restored-db2' user='postgres' host='localhost' password='test'")
 
-#open the google spreadsheet (where 'PY to Gsheet Test' is the name of my sheet)
+# print(conn)
+
+# open the google spreadsheet (where 'PY to Gsheet Test' is the name of my sheet)
 sh = gc.open('dan_and_nina_transactions')
 
 #select the first sheet

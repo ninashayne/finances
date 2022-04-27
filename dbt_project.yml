@@ -9,10 +9,10 @@ config-version: 2
 profile: 'nina_personal'
 
 
-source-paths: ["models"]
+model-paths: ["models"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
+seed-paths: ["data"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
 
@@ -34,13 +34,17 @@ seeds:
     chase_amazon_transactions:
       +column_types:
         transaction_date: date
-
     chase_freedom_transactions:
       +column_types:
         transaction_date: date
+        description: text
     chase_sapphire_transactions:
       +column_types:
         transaction_date: date
     apple_transactions:
       +column_types:
         transaction_date: date
+    nordstrom_transactions:
+      +column_types:
+        transaction_date: date
+        posting_date: date
