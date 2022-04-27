@@ -1,11 +1,12 @@
 {% for data_source in
 ["citi_transactions_cumulative"
+, "amex_transactions_cumulative"
+, "apple_transactions_cumulative"
 , "barclay_transactions_cumulative"
 , "chase_transactions_cumulative"
-, "amex_transactions_cumulative"
 , "discover_transactions_cumulative"
-, "apple_transactions_cumulative"
 , "nordstrom_transactions_cumulative"
+, "tjmaxx_transactions_cumulative"
 ]
 %}
 
