@@ -3,13 +3,16 @@ import yaml
 profile = '/Users/ninafink/.dbt/profiles.yml'
 
 with open(profile,'r') as stream:
-    x = (yaml.safe_load(stream))
+    dbt_profile = (yaml.safe_load(stream))
 
-profile_name = 'nina_personal'
+with open('dbt_project.yml','r') as stream:
+    dbt_project = yaml.safe_load(stream)
 
-target = x[profile_name]['target']
+profile_name = dbt_project['profile']
 
-db_name = x[profile_name]['outputs'][target]['dbname']
+target = dbt_profile[profile_name]['target']
+
+db_name = dbt_profile[profile_name]['outputs'][target]['dbname']
 
 
 print(db_name)

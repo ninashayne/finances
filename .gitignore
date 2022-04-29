@@ -6,3 +6,4 @@ my_json_file.json
 *.tar
 target/
 dbt_packages/
+__pycache__/

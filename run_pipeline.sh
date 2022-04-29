@@ -14,9 +14,17 @@ while [[ "$control" = "y" ]];do
   fi
 done
 
-dbt seed --full-refresh
-dbt run -m staging
-dbt compile ## this actually runs the upsert scripts, which are saved in analysis files and run queries
+echo "Run dbt? y/n\n\n"
+read run_dbt
+
+if [[ "$run_dbt" = "y" ]]
+then
+  dbt clean
+  dbt deps
+  dbt seed --full-refresh
+  dbt run -m staging
+  dbt compile ## this actually runs the upsert scripts, which are saved in analysis files and run queries
+fi
 
 echo "Upload output? y/n\n\n"
 read upload_output
