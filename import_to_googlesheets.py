@@ -3,13 +3,15 @@
 import pygsheets
 import pandas as pd
 from sqlalchemy import create_engine
+from get_db_reference import db_name
 
 #authorization
 gc = pygsheets.authorize(service_file='/Users/ninafink/Desktop/nina_personal/finances/my_json_file.json')
 
 
 # # connect to database
-connection_string = 'postgresql://postgres:test@localhost:5432/restored-db2'
+connection_string = 'postgresql://postgres:test@localhost:5432/'+db_name
+print(connection_string)
 conn = create_engine(connection_string)
 
 
@@ -35,3 +37,6 @@ sql = "select * from fink_finances.transactions_with_dupes"
 
 df = pd.read_sql(sql,conn)
 dupes.set_dataframe(df,(1,1))
+
+
+

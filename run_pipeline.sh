@@ -21,7 +21,7 @@ dbt compile ## this actually runs the upsert scripts, which are saved in analysi
 echo "Upload output? y/n\n\n"
 read upload_output
 
-python3 import_to_googlesheets.py
+
 
  if [[ "$upload_output" = "y" ]]
  then
@@ -31,5 +31,8 @@ python3 import_to_googlesheets.py
 rm data/*.bak
 
 DATE=$(date +"%m-%d-%y")
+DB=$(python3 get_db_reference.py)
 
-pg_dump -U postgres -W -F t restored-db2 > "$DATE"_fink_finances_backup.tar
+echo "$DB"
+
+pg_dump -U postgres -W -F t "$DB" > "$DATE"_fink_finances_backup.tar
