@@ -4,11 +4,13 @@ sources:
   - name: fink_finances
     tables:
       - name: amex_transactions
+      - name: anntaylor_transactions
       - name: apple_transactions
       - name: barclay_transactions
       - name: chase_amazon_transactions
       - name: chase_checking_transactions
       - name: chase_freedom_transactions
+      - name: chase_sapphire_dan_transactions
       - name: chase_sapphire_transactions
       - name: citi_transactions
       - name: discover_transactions
@@ -19,6 +21,7 @@ sources:
   - name: raw_transactions
     tables:
       - name: amex_transactions_cumulative
+      - name: anntaylor_transactions_cumulative
       - name: apple_transactions_cumulative
       - name: barclay_transactions_cumulative
       - name: chase_transactions_cumulative

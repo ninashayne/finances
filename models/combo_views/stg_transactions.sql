@@ -7,6 +7,7 @@
 , "discover_transactions_cumulative"
 , "nordstrom_transactions_cumulative"
 , "tjmaxx_transactions_cumulative"
+, 'anntaylor_transactions_cumulative'
 ]
 %}
 

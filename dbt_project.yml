@@ -48,3 +48,6 @@ seeds:
       +column_types:
         transaction_date: date
         posting_date: date
+    anntaylor_transactions:
+      +column_types:
+        date: date  

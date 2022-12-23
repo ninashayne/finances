@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-echo "which Account? checking, amazon, freedom, sapphire\n\n"
+echo "which Account? checking, amazon, freedom, sapphire, sapphire_dan\n\n"
 
 read chase_account_type
 echo ${chase_account_type}

@@ -35,6 +35,16 @@ select
   , 'chase_sapphire' as source_name
 from {{ source('fink_finances', 'chase_sapphire_transactions') }}
 
+
+union all
+
+select
+  amount *-1 as amount
+  , transaction_date::date as transaction_date
+  , description as transaction_description
+  , 'chase_sapphire_dan' as source_name
+from {{ source('fink_finances', 'chase_sapphire_dan_transactions') }}
+
 )
 
 select
