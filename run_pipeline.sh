@@ -24,6 +24,8 @@ then
   dbt seed --full-refresh
   dbt run -m staging
   dbt compile ## this actually runs the upsert scripts, which are saved in analysis files and run queries
+  # rm -r analysis
+  # mkdir analysis
 fi
 
 echo "Upload output? y/n\n\n"

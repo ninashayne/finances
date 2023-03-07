@@ -8,6 +8,7 @@
 , "nordstrom_transactions_cumulative"
 , "tjmaxx_transactions_cumulative"
 , 'anntaylor_transactions_cumulative'
+, 'first_republic_transactions_cumulative'
 ]
 %}
 

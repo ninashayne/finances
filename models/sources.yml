@@ -17,6 +17,7 @@ sources:
       - name: jetblue_transactions
       - name: nordstrom_transactions
       - name: tjmaxx_transactions
+      - name: first_republic_transactions
 
   - name: raw_transactions
     tables:
@@ -29,3 +30,4 @@ sources:
       - name: discover_transactions_cumulative
       - name: nordstrom_transactions_cumulative
       - name: tjmaxx_transactions_cumulative
+      - name: first_republic_transactions_cumulative
