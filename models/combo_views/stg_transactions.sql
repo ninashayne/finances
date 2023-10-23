@@ -9,6 +9,7 @@
 , "tjmaxx_transactions_cumulative"
 , 'anntaylor_transactions_cumulative'
 , 'first_republic_transactions_cumulative'
+, 'capital_one_transactions_cumulative'
 ]
 %}
 
@@ -22,7 +23,7 @@ else category_l1 end as category_l1
 , category_l2
 , is_cancelled
 , is_reimbursed_by_house
-
+, is_elevate_foods
 , update_dt
 , source_name
 from {{ source('raw_transactions', data_source) }}

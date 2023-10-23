@@ -7,6 +7,7 @@ sources:
       - name: anntaylor_transactions
       - name: apple_transactions
       - name: barclay_transactions
+      - name: capital_one_transactions
       - name: chase_amazon_transactions
       - name: chase_checking_transactions
       - name: chase_freedom_transactions
@@ -14,10 +15,10 @@ sources:
       - name: chase_sapphire_transactions
       - name: citi_transactions
       - name: discover_transactions
+      - name: first_republic_transactions
       - name: jetblue_transactions
       - name: nordstrom_transactions
       - name: tjmaxx_transactions
-      - name: first_republic_transactions
 
   - name: raw_transactions
     tables:
@@ -31,3 +32,4 @@ sources:
       - name: nordstrom_transactions_cumulative
       - name: tjmaxx_transactions_cumulative
       - name: first_republic_transactions_cumulative
+      - name: capital_one_transactions_cumulative

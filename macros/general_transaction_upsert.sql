@@ -23,6 +23,7 @@ amount
 , is_reimbursed_by_house
 , source_name
 , current_timestamp as update_dt
+, is_elevate_foods
 from fink_finances.stg__{{source_name}};
 
 insert into raw_transactions.{{source_name}}_transactions_cumulative
