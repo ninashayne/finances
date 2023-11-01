@@ -24,7 +24,7 @@ wks = sh.worksheet('title','Transactions')
 
 
 # create dataframe from query
-sql = "select * from fink_finances.spending_transactions"
+sql = "select * from fink_finances.spending_transactions where transaction_date >= '2023-01-01'"
 df = pd.read_sql_query(sql, conn)
 
 
