@@ -17,9 +17,9 @@ if [[ "$chase_account_type" = "checking" ]]
 then
   echo "this is a checking account"
   cat data/headers/chase_checking_headers.txt data/chase_${chase_account_type}_stg.csv > data/chase_${chase_account_type}_transactions.csv
-elif[ "$seconchase_account_typeds" = "sapphire_dan"  ]  
+elif [ "$chase_account_type" = "sapphire_dan"  ]  
 then
-  echo "'this is a credit card account'"
+  echo "this is a cc account"
   cat data/headers/chase_sapphire_dan_headers.txt data/chase_${chase_account_type}_stg.csv > data/chase_${chase_account_type}_transactions.csv
 else
   echo "'this is a credit card account'"
