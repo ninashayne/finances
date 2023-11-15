@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+cwd=$(pwd)
+
+
+cd /Users/ninafink/Desktop/nina_personal/finances
+
+
 control='y'
 while [[ "$control" = "y" ]];do
   echo "Is there a(nother) file to upload (y/n)?"
@@ -46,3 +52,5 @@ DB=$(python3 get_db_reference.py)
 echo "$DB"
 
 pg_dump -U postgres -W -F t "$DB" > "$DATE"_fink_finances_backup.tar
+
+cd $cwd
