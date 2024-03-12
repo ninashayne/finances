@@ -21,10 +21,11 @@ sh = gc.open('dan_and_nina_transactions')
 
 #select the first sheet
 wks = sh.worksheet('title','Transactions')
+wks.clear()
 
 
 # create dataframe from query
-sql = "select * from fink_finances.spending_transactions where transaction_date >= '2023-01-01'"
+sql = "select * from fink_finances.spending_transactions where transaction_date >= date_trunc('month', current_date) + interval '-12 months'"
 df = pd.read_sql_query(sql, conn)
 
 
