@@ -12,7 +12,7 @@ while [[ "$control" = "y" ]];do
   read control
   if [[ "$control" = "y" ]]
   then
-    echo "\n\nWhich source? (amex, anntaylor, apple, barclay, capital_one, chase, citi, discover, nordstrom)\n\n"
+    echo "\n\nWhich source? (amex, anntaylor, apple, barclay, capital_one, chase, citi, discover, manual, nordstrom)\n\n"
     read script_name
     echo ${script_name}
     echo "{{run_upsert('$script_name')}}" > analysis/${script_name}_upsert.sql

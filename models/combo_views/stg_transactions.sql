@@ -10,6 +10,7 @@
 , 'anntaylor_transactions_cumulative'
 , 'first_republic_transactions_cumulative'
 , 'capital_one_transactions_cumulative'
+, 'manual_transactions_cumulative'
 ]
 %}
 

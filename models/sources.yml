@@ -17,6 +17,7 @@ sources:
       - name: discover_transactions
       - name: first_republic_transactions
       - name: jetblue_transactions
+      - name: manual_transactions
       - name: nordstrom_transactions
       - name: tjmaxx_transactions
 
@@ -26,10 +27,11 @@ sources:
       - name: anntaylor_transactions_cumulative
       - name: apple_transactions_cumulative
       - name: barclay_transactions_cumulative
+      - name: capital_one_transactions_cumulative
       - name: chase_transactions_cumulative
       - name: citi_transactions_cumulative
       - name: discover_transactions_cumulative
+      - name: first_republic_transactions_cumulative
+      - name: manual_transactions_cumulative
       - name: nordstrom_transactions_cumulative
       - name: tjmaxx_transactions_cumulative
-      - name: first_republic_transactions_cumulative
-      - name: capital_one_transactions_cumulative
