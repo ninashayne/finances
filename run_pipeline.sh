@@ -20,6 +20,7 @@ while [[ "$control" = "y" ]];do
   fi
 done
 
+
 echo "Run dbt? y/n\n\n"
 read run_dbt
 
@@ -27,8 +28,11 @@ if [[ "$run_dbt" = "y" ]]
 then
   dbt clean
   dbt deps
+  echo "dbt seed --full-refresh"
   dbt seed --full-refresh
+  echo "dbt run -m staging"
   dbt run -m staging
+  echo "dbt compile -- upsert scripts outside of standard dbt framework"
   dbt compile ## this actually runs the upsert scripts, which are saved in analysis files and run queries
   # rm -r analysis
   # mkdir analysis

@@ -1,4 +1,4 @@
 #!/bin/zsh
 
-echo "Manual!"
-python3 source_data/test.py
+
+python3 source_data/manual_data.py
