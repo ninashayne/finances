@@ -1,4 +1,5 @@
 select pkey
+      , transaction_date
       , source_name
       , transaction_description
       , amount

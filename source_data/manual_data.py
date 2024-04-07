@@ -4,7 +4,7 @@ import pygsheets
 gc = pygsheets.authorize(service_file='/Users/ninafink/Desktop/nina_personal/finances/my_json_file.json')
 
 # open the google spreadsheet (where 'PY to Gsheet Test' is the name of my sheet)
-sh = gc.open('dan_and_nina_transactions')
+sh = gc.open('Fink Spending')
 
 #select the first sheet
 wks = sh.worksheet('title','Manual Transactions')
