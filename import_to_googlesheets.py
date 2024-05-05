@@ -25,7 +25,7 @@ wks.clear()
 
 
 # create dataframe from query
-sql = "select * from fink_finances.spending_transactions where transaction_date >= date_trunc('month', current_date) + interval '-12 months' and transaction_date <= date_trunc('month', current_date)"
+sql = "select * from fink_finances.spending_transactions where transaction_month >= date_trunc('month', current_date) + interval '-12 months' and transaction_month <= date_trunc('month', current_date) order by amount desc"
 df = pd.read_sql_query(sql, conn)
 
 
