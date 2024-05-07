@@ -55,6 +55,8 @@ DB=$(python3 get_db_reference.py)
 
 echo "$DB"
 
-pg_dump -U postgres -W -F t "$DB" > "$DATE"_fink_finances_backup.tar
+rm -r backups
+mkdir backups
+pg_dump -U postgres -W -F t "$DB" > backups/"$DATE"_fink_finances_backup.tar
 
 cd $cwd
