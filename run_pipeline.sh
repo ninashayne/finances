@@ -38,6 +38,19 @@ then
   # mkdir analysis
 fi
 
+python3 sources_needing_categories.py
+
+control='y'
+while [[ "$control" = "y" ]];do
+  echo "Check categories again (y/n)?"
+  read control
+  if [[ "$control" = "y" ]]
+  then
+    python3 sources_needing_categories.py
+  fi
+  echo ""
+done
+
 echo "Upload output? y/n\n\n"
 read upload_output
 

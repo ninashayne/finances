@@ -15,4 +15,4 @@ target = dbt_profile[profile_name]['target']
 db_name = dbt_profile[profile_name]['outputs'][target]['dbname']
 
 
-print(db_name)
+# print(db_name)
